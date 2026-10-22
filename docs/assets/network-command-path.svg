@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1470" height="1810" viewBox="0 0 1470 1810" role="img" aria-labelledby="title"><title id="title">ESP32-WROOM startup and command parsing</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#7e96b4"/></marker></defs>
+<rect width="1470" height="1810" rx="18" fill="#0b1220"/>
+<style>text{font-family:Arial,sans-serif;fill:#e2e8f0;font-size:17px}.edge{fill:none;stroke:#7e96b4;stroke-width:2;marker-end:url(#arrow)}.label{font-size:14px;fill:#67e8f9;paint-order:stroke;stroke:#0b1220;stroke-width:5px;stroke-linejoin:round}</style>
+<text x="36" y="48" style="font-size:27px;font-weight:bold">ESP32-WROOM startup and command parsing</text>
+<path d="M190.0 198 V250" class="edge"/>
+<path d="M190.0 338 V390" class="edge"/>
+<path d="M190.0 478 V530" class="edge"/>
+<path d="M190.0 618 V670" class="edge"/>
+<path d="M190.0 758 V810" class="edge"/>
+<path d="M190.0 898 V950" class="edge"/>
+<path d="M190.0 1038 V1090" class="edge"/>
+<path d="M190.0 1300 V758" class="edge"/>
+<text x="202.0" y="1029.0" class="label">external prerequisite</text>
+<path d="M340 1134.0 H455.0 V154.0 H570" class="edge"/>
+<text x="463.0" y="644.0" class="label">connection information</text>
+<path d="M720.0 198 V250" class="edge"/>
+<path d="M720.0 338 V390" class="edge"/>
+<path d="M720.0 478 V530" class="edge"/>
+<path d="M720.0 618 V670" class="edge"/>
+<path d="M720.0 758 V810" class="edge"/>
+<path d="M720.0 898 V950" class="edge"/>
+<path d="M870 994.0 H1100" class="edge"/>
+<text x="985.0" y="984.0" class="label">Yes</text>
+<path d="M720.0 1038 V1090" class="edge"/>
+<text x="732.0" y="1064.0" class="label">No</text>
+<path d="M720.0 1090 V898" class="edge"/>
+<text x="732.0" y="994.0" class="label">No: wait</text>
+<path d="M720.0 1178 V1230" class="edge"/>
+<text x="732.0" y="1204.0" class="label">Yes</text>
+<path d="M720.0 1318 V1370" class="edge"/>
+<path d="M870 1414.0 H1100" class="edge"/>
+<text x="985.0" y="1404.0" class="label">No</text>
+<path d="M720.0 1458 V1510" class="edge"/>
+<text x="732.0" y="1484.0" class="label">Yes</text>
+<path d="M720.0 1598 V1650" class="edge"/>
+<rect x="40" y="110" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="190.0" y="160.0" text-anchor="middle">Timer-driven ESP32-WROOM reset</text>
+<rect x="40" y="250" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="190.0" y="289.5" text-anchor="middle">Foreground Startup_Commands</text>
+<text x="190.0" y="310.5" text-anchor="middle">service</text>
+<rect x="40" y="390" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="190.0" y="440.0" text-anchor="middle">AT+SYSSTORE=0: persistence off</text>
+<rect x="40" y="530" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="190.0" y="569.5" text-anchor="middle">AT+CIPMUX=1: multiple</text>
+<text x="190.0" y="590.5" text-anchor="middle">connections</text>
+<rect x="40" y="670" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="190.0" y="720.0" text-anchor="middle">AT+CIPSERVER=1,5324: TCP server</text>
+<rect x="40" y="810" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="190.0" y="860.0" text-anchor="middle">AT+CWJAP?: query access point</text>
+<rect x="40" y="950" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="190.0" y="1000.0" text-anchor="middle">AT+CIFSR: query IP information</text>
+<rect x="40" y="1090" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="190.0" y="1140.0" text-anchor="middle">Display module SSID / IP</text>
+<rect x="570" y="110" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="149.5" text-anchor="middle">TCP terminal connects to</text>
+<text x="720.0" y="170.5" text-anchor="middle">reachable IP and port 5324</text>
+<rect x="570" y="250" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="289.5" text-anchor="middle">UART receive interrupt buffers</text>
+<text x="720.0" y="310.5" text-anchor="middle">bytes</text>
+<rect x="570" y="390" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="440.0" text-anchor="middle">Cereal_Process assembles lines</text>
+<rect x="570" y="530" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="580.0" text-anchor="middle">Parse extracts command payload</text>
+<rect x="570" y="670" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="720.0" text-anchor="middle">Enqueue command buffer index</text>
+<rect x="570" y="810" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="860.0" text-anchor="middle">Command_Parser checks queue</text>
+<rect x="570" y="950" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="1000.0" text-anchor="middle">Uppercase S stop shortcut?</text>
+<rect x="570" y="1090" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="1140.0" text-anchor="middle">Ready for next command?</text>
+<rect x="570" y="1230" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="1269.5" text-anchor="middle">Dequeue; check four-character</text>
+<text x="720.0" y="1290.5" text-anchor="middle">prefix</text>
+<rect x="570" y="1370" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="1420.0" text-anchor="middle">Prefix matches?</text>
+<rect x="570" y="1510" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="1560.0" text-anchor="middle">Read duration; dispatch opcode</text>
+<rect x="570" y="1650" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="720.0" y="1700.0" text-anchor="middle">Motion / navigation / display</text>
+<rect x="40" y="1300" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="190.0" y="1339.5" text-anchor="middle">External Wi-Fi provisioning /</text>
+<text x="190.0" y="1360.5" text-anchor="middle">association</text>
+<rect x="1100" y="950" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="1250.0" y="989.5" text-anchor="middle">Clear queue, reset timer and</text>
+<text x="1250.0" y="1010.5" text-anchor="middle">stop wheels</text>
+<rect x="1100" y="1370" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="1250.0" y="1420.0" text-anchor="middle">Discard command</text>
+</svg>

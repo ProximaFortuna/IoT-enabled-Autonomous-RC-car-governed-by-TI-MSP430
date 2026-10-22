@@ -1,0 +1,13 @@
+Debug/
+Release/
+Compiled/
+.idea/
+.launches/
+.settings/
+*.obj
+*.out
+*.map
+*.d
+*_linkInfo.xml
+local_config.h
+.env

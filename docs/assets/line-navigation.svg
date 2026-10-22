@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="1480" viewBox="0 0 850 1480" role="img" aria-labelledby="title"><title id="title">Line-navigation state sequence</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#7e96b4"/></marker></defs>
+<rect width="850" height="1480" rx="18" fill="#0b1220"/>
+<style>text{font-family:Arial,sans-serif;fill:#e2e8f0;font-size:17px}.edge{fill:none;stroke:#7e96b4;stroke-width:2;marker-end:url(#arrow)}.label{font-size:14px;fill:#67e8f9;paint-order:stroke;stroke:#0b1220;stroke-width:5px;stroke-linejoin:round}</style>
+<text x="36" y="48" style="font-size:27px;font-weight:bold">Line-navigation state sequence</text>
+<path d="M330.0 198 V260" class="edge"/>
+<text x="342.0" y="229.0" class="label">timer threshold</text>
+<path d="M330.0 348 V410" class="edge"/>
+<text x="342.0" y="379.0" class="label">timer threshold</text>
+<path d="M330.0 498 V560" class="edge"/>
+<text x="342.0" y="529.0" class="label">either detector crosses</text>
+<text x="342.0" y="547.0" class="label">threshold</text>
+<path d="M330.0 648 V710" class="edge"/>
+<text x="342.0" y="679.0" class="label">timer threshold</text>
+<path d="M330.0 798 V860" class="edge"/>
+<text x="342.0" y="829.0" class="label">both detector</text>
+<text x="342.0" y="847.0" class="label">conditions satisfied</text>
+<path d="M330.0 948 V1010" class="edge"/>
+<text x="342.0" y="979.0" class="label">timer equals target</text>
+<path d="M330.0 1098 V1160" class="edge"/>
+<text x="342.0" y="1129.0" class="label">timer equals target</text>
+<path d="M330.0 1248 V1310" class="edge"/>
+<text x="342.0" y="1279.0" class="label">XIT flag</text>
+<path d="M480 1335 h28 v60 h-28" class="edge"/>
+<text x="512" y="1375" class="label">end_case service</text>
+<rect x="180" y="110" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="330.0" y="160.0" text-anchor="middle">Start</text>
+<rect x="180" y="260" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="330.0" y="310.0" text-anchor="middle">Arc search</text>
+<rect x="180" y="410" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="330.0" y="460.0" text-anchor="middle">Approach line</text>
+<rect x="180" y="560" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="330.0" y="610.0" text-anchor="middle">Intercept / stop</text>
+<rect x="180" y="710" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="330.0" y="760.0" text-anchor="middle">Align to line</text>
+<rect x="180" y="860" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="330.0" y="910.0" text-anchor="middle">Travel along line</text>
+<rect x="180" y="1010" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="330.0" y="1060.0" text-anchor="middle">Circle pause</text>
+<rect x="180" y="1160" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="330.0" y="1210.0" text-anchor="middle">Follow circle</text>
+<rect x="180" y="1310" width="300" height="88" rx="12" fill="#172c42" stroke="#38bdf8"/>
+<text x="330.0" y="1360.0" text-anchor="middle">Exit / end_case service</text>
+</svg>
